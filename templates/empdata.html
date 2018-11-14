@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block container %}
+<h1> Employees in ICT</h1>
+{% for employee in employeeList %}
+
+<ul class="list-group-item">
+    <li>{{employee.code}}</li>
+    <li>{{employee.name}}</li>
+    <li>{{employee.salary}}</li>
+    <li>{{employee.mobile}}</li>
+    <li>{{employee.age}}</li>
+</ul>
+{% endfor %}
+{% endblock %}
